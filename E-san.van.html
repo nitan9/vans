@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รถตู้เช่าพร้อมคนขับภาคอีสาน</title>
+    <style>
+        /* ตั้งค่าฟอนต์และ Reset ค่าเริ่มต้น */
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 1. พื้นหลัง Gradient และการจัดหน้า */
+        body {
+            font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ 'Kanit' ที่อ่านง่าย */
+            min-height: 100vh; /* ทำให้ body สูงเต็มหน้าจอเป็นอย่างน้อย */
+            display: flex;
+            justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+            align-items: center;   /* จัดให้อยู่กลางแนวตั้ง */
+            padding-bottom: 60px; /* เพิ่มพื้นที่ด้านล่างสำหรับ footer */
+
+            /* พื้นหลังสีสดใสแบบไล่ระดับ */
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        }
+
+        /* 2. กล่องข้อความกลางหน้าจอ */
+        .content-box {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.2); /* พื้นหลังโปร่งแสง */
+            border-radius: 20px; /* ขอบมน */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* เงาให้ดูมีมิติ */
+            backdrop-filter: blur(8px); /* ทำให้พื้นหลังเบลอ (Glassmorphism Effect) */
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #333; /* สีตัวอักษรเข้มขึ้นเพื่อให้อ่านง่าย */
+        }
+
+        h1 {
+            font-size: 2.5rem; /* ขนาดตัวอักษรสำหรับหัวข้อ */
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* 3. ปุ่ม Call to Action ที่สวยงาม */
+        .cta-button {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: #f97794; /* สีปุ่มที่เข้ากับพื้นหลัง */
+            padding: 15px 40px;
+            border-radius: 50px; /* ทำให้ปุ่มเป็นทรงแคปซูล */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out; /* ทำให้ Animation สมูท */
+        }
+
+        /* Effect ตอนเอาเมาส์ไปวางบนปุ่ม */
+        .cta-button:hover {
+            background-color: #ff9a9e;
+            transform: translateY(-5px); /* ทำให้ปุ่มลอยขึ้นเล็กน้อย */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 4. ส่วนท้าย (Footer) */
+        footer {
+            position: fixed; /* ทำให้ footer อยู่ตำแหน่งเดิมเสมอ */
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1); /* สีพื้นหลังโปร่งแสงเล็กน้อย */
+            color: #555; /* สีตัวอักษร */
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            backdrop-filter: blur(2px); /* เบลอพื้นหลังเล็กน้อย */
+            -webkit-backdrop-filter: blur(2px);
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="content-box">
+        <h1>ธนัชพรทรานสปอร์ต</h1>
+        <h2>รถตู้เช่าพร้อมคนขับ</h2>
+        <p>สะดวก สะอาด ปลอดภัย</p>
+        <a href="https://script.google.com/macros/s/AKfycbwo4CYqt7zGywDfrXbmuPorpv6oEh_JeoFkD6x0F6-Lzk6QGtbhrl8Cff481t7LC98/exec" target="_blank" class="cta-button">
+            เข้าสู่เว็บไซต์
+        </a>
+    </main>
+
+    <footer>
+        <p style="margin: 0;">Developed by Nitan.B</p>
+    </footer>
+
+</body>
+</html>
