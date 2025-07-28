@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงผลเว็บไซต์อื่น</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* ซ่อน scrollbar ของหน้าหลัก */
+        }
+        iframe {
+            width: 100%;
+            height: 100vh; /* ทำให้ iframe สูงเต็มจอ */
+            border: none; /* ไม่มีเส้นขอบ */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>หน้าเว็บของฉัน</h1>
+    <p>ด้านล่างนี้คือเว็บไซต์ที่ดึงมาแสดงผล:</p>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbwBoG17Ne8jNQ4TWlZBpJR13929hkxqnBjXI4vnG7o-5e3eYKDOCvq3O2xDTmmc2SP4/exec">
+        <p>เบราว์เซอร์ของคุณไม่รองรับ iframes</p>
+    </iframe>
+
+</body>
+</html>
